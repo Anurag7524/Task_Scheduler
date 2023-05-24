@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0E3B61"
+    tools:context=".DataInsertActivity">
+
+    <TextView
+        android:id="@+id/txtsetUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a new note"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/memo"/>
+
+    <EditText
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:minHeight="48dp"
+        android:background="@drawable/txt_shape"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@drawable/txt_shape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Description"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@drawable/txt_shape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Select Due Date(Optional)"
+        android:inputType="date"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+
+<!--    <Switch-->
+<!--        android:id="@+id/switchNotif"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#FFF"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="55dp"-->
+<!--        android:text="Want a notification on that date? " />-->
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Note"
+        android:hapticFeedbackEnabled="true"
+        android:backgroundTint="#5B9FDA"
+        android:background="@drawable/txt_shape"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+</LinearLayout>
