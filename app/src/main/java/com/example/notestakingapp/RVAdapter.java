@@ -64,6 +64,7 @@ public class RVAdapter extends ListAdapter<Note,RVAdapter.ViewHolder> {
             holder.binding.txtSetDate.setText(note.getDate());
         }
 
+
     }
 
     public Note getNote(int position)

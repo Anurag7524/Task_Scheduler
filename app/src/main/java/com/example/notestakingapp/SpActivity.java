@@ -23,6 +23,6 @@ public class SpActivity extends AppCompatActivity {
                 startActivity(iHome);
                 finish();
             }
-        },5000);
+        },3000);
     }
 }

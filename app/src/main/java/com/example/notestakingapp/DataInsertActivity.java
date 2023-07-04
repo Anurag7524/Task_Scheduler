@@ -3,16 +3,19 @@ package com.example.notestakingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.notestakingapp.databinding.ActivityDataInsertBinding;
 
 import java.sql.Date;
+import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -38,10 +41,9 @@ public class DataInsertActivity extends AppCompatActivity {
             binding.txtTitle.setText(getIntent().getStringExtra("title"));
             binding.txtDesc.setText(getIntent().getStringExtra("desc"));
             binding.txtDate.setText(getIntent().getStringExtra("date"));
+//            binding.txtTime.setText(getIntent().getStringExtra("time"));
             int id=getIntent().getIntExtra("id",0);
             binding.btnAdd.setText("Update Note");
-
-
 
             binding.btnAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -51,6 +53,7 @@ public class DataInsertActivity extends AppCompatActivity {
                     intent.putExtra("title", binding.txtTitle.getText().toString());
                     intent.putExtra("desc", binding.txtDesc.getText().toString());
                     intent.putExtra("date",binding.txtDate.getText().toString());
+//                    intent.putExtra("time",binding.txtTime.getText().toString());
 
                     intent.putExtra("id",getIntent().getIntExtra("id",0));
 
@@ -80,6 +83,7 @@ public class DataInsertActivity extends AppCompatActivity {
                     +binding.txtDate.getText().toString(),Toast.LENGTH_SHORT).show();
 
                     intent.putExtra("date",binding.txtDate.getText().toString());
+//                    intent.putExtra("time",binding.txtTime.getText().toString());
 
                     intent.putExtra("day",day);
                     intent.putExtra("month",month);
@@ -110,6 +114,7 @@ public class DataInsertActivity extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     public void onBackPressed() {

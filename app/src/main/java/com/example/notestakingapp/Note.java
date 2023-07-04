@@ -13,7 +13,6 @@ public class Note {
     private String desc;
 
     private String date;
-
     @PrimaryKey(autoGenerate = true)
     private int id;
 
@@ -27,6 +26,8 @@ public class Note {
         this.desc=desc;
         this.date=date;
     }
+
+
 
     public String getTitle() {
         return title;
@@ -60,4 +61,11 @@ public class Note {
         this.date = date;
     }
 
+//    public String getTime() {
+//        return time;
+//    }
+
+//    public void setTime(String time) {
+//        this.time = time;
+//    }
 }

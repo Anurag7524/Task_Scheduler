@@ -22,7 +22,6 @@ public abstract class NoteDatabase  extends RoomDatabase {
         private Date birthday;
     }
 
-
     public static synchronized NoteDatabase getInstance(Context context){
         if(instance==null)
         {

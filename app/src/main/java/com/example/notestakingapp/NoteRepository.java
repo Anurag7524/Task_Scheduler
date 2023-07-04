@@ -42,7 +42,6 @@ public class NoteRepository {
     }
     private static class DeleteTask extends AsyncTask<Note,Void,Void>{
         private NoteDao noteDao;
-
         public DeleteTask(NoteDao noteDao) {
             this.noteDao = noteDao;
         }
